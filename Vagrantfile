@@ -18,12 +18,12 @@ Vagrant.configure(2) do |config|
   	aws.security_groups = ["WebServerSG"]
 
   	aws.tags = {
-  		"Name" => "Dev Vagrant"
+  		"Name" => "Ansible dev"
   	}
   end
 
   # Provisioning
-  config.vm.provision :ansible do |ansible|
-  	ansible.playbook = "provisioning/playbook.yml"
-  end
+  #config.vm.provision :ansible do |ansible|
+  #	ansible.playbook = "provisioning/playbook.yml"
+  #end
 end
